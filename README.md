@@ -11,10 +11,9 @@ Os itens "Novos" e "Seminovos" devem ser realocados para esse novo dropdown. O i
 **Veículos | Consórcio | Pós-Venda | Ofertas Únicas | Vendas Diretas | Contato**
 
 
-### Resultado 
+### Resolução:
 
 ```js
-
 
 // Carrega os itens "novos" e "seminovos"
 const novosItem = document.querySelector('a[href="/autoforce-ford/novos"]').parentNode;
@@ -77,7 +76,7 @@ Disponível em https://testes.autoforce.com.br/autoforce-ford/novos/territory-20
 - 1 Textarea com placeholder "Mensagem".
 
 
-### Resolução
+### Resolução:
 
 
 ```js
@@ -226,7 +225,6 @@ popupWhatsapp.addEventListener("click", () => {
 
 
 # Desafio 2 - Montando Layout
-
 
 <img src ="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />&nbsp;
 <img src ="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />&nbsp;
