@@ -12,8 +12,8 @@ veiculosItem.classList.add("nav-item", "nav-simple__item", "veiculos");
 
 // Adiciona HTML como dropdown de "veículos"
 veiculosItem.innerHTML = `
-    <a href="/autoforce-ford#" class="nav-link nav-simple__link" data-toggle="dropdown"> Veículos <i class="icon icon-dropdown icon-arrow-d"></i></a>
-    <div class="nav-simple-sub card-collapse-deep dropdown-menu dropdown">
+    <a href="/autoforce-ford#" class="nav-link nav-simple__link" data-toggle="dropdown" > Veículos <i class="icon icon-dropdown icon-arrow-d"></i></a>
+    <div class="nav-simple-sub card-collapse-deep dropdown-menu dropdown" id="dropdown-menu">
         <ul class="list list--border-bottom">
             <li><a href="/autoforce-ford/novos" class="card-collapse-deep__title"> Novos </a></li>
             <li><a href="/autoforce-ford/seminovos" class="card-collapse-deep__title"> Seminovos </a></li>
@@ -44,5 +44,5 @@ listItems.forEach(item => {
 // Dispara o evento de dropdown ao item "veículos"
 veiculosItem.addEventListener("click", () => {
     veiculosItem.classList.toggle("show");
-    document.querySelector(".menuDropdown").classList.toggle("show");
+    document.getElementById("dropdown-menu").classList.toggle("show");
 });
